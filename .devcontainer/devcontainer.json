@@ -1,0 +1,13 @@
+{
+  "name": "DWEC - E09-PlantillaDWEC",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:24",
+  "runArgs": ["--security-opt", "label=disable"],
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode", "vitest.explorer"]
+    }
+  },
+  "forwardPorts": [5173],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
