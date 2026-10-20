@@ -5,7 +5,7 @@ import { precioConIva, aplicarDescuento } from './precios.js';
 
 describe('precioConIva', () => {
   it('aplica el 21 % por defecto', () => {
-    expect(precioConIva(100)).toBe(120);
+    expect(precioConIva(100)).toBe(121);
   });
 
   it('aplica el IVA indicado', () => {
